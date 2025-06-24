@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Hi, I&#39;m Ken on Ken Nichol</title>
-    <link>http://localhost:1313/</link>
+    <link>https://kennithnichol.com/</link>
     <description>Recent content in Hi, I&#39;m Ken on Ken Nichol</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 24 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kennithnichol.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Ken</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://kennithnichol.com/about/</link>
       <pubDate>Tue, 24 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://kennithnichol.com/about/</guid>
       <description>A bit about my background, work and what I believe in.</description>
     </item>
     <item>
       <title>Hire Me</title>
-      <link>http://localhost:1313/hire/</link>
+      <link>https://kennithnichol.com/hire/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hire/</guid>
+      <guid>https://kennithnichol.com/hire/</guid>
       <description>&lt;p&gt;Looking for a seasoned dev and mentor with a systems mind and clear communication? I help clients modernize their sites, streamline their workflows, and launch bold ideas with confidence.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;What I do&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
