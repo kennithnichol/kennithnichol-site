@@ -3,3 +3,9 @@ languageCode = 'en-us'
 title = 'Ken Nichol'
 theme = "PaperMod"
 
+[menu]
+  [[menu.main]]
+    identifier = "hire"
+    name = "Hire Me"
+    url = "/hire/"
+    weight = 20

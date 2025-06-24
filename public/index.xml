@@ -2,18 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Ken Nichol</title>
-    <link>https://kennithnichol.netlify.app/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Ken Nichol</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 24 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://kennithnichol.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Ken</title>
-      <link>https://kennithnichol.netlify.app/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Tue, 24 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://kennithnichol.netlify.app/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>A bit about my background, work and what I believe in.</description>
+    </item>
+    <item>
+      <title>Hire Me</title>
+      <link>http://localhost:1313/hire/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hire/</guid>
+      <description>&lt;p&gt;Looking for a seasoned dev and mentor with a systems mind and clear communication? I help clients modernize their sites, streamline their workflows, and launch bold ideas with confidence.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What I do&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Modern WordPress&lt;/li&gt;
+&lt;li&gt;Site performance&lt;/li&gt;
+&lt;li&gt;Dev coaching &amp;amp; technical mentorship&lt;/li&gt;
+&lt;li&gt;Light design, content strategy, and infrastructure consulting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let&amp;rsquo;s make something remarkable. &lt;a href=&#34;mailto:ken@kennithnichol.com&#34;&gt;Reach out via email&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Case-Studies on Ken Nichol</title>
-    <link>https://kennithnichol.netlify.app/case-studies/</link>
+    <link>http://localhost:1313/case-studies/</link>
     <description>Recent content in Case-Studies on Ken Nichol</description>
     <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://kennithnichol.netlify.app/case-studies/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/case-studies/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
