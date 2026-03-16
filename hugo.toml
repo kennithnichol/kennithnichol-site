@@ -1,8 +1,0 @@
-baseURL = 'https://www.kennithnichol.com/'
-languageCode = 'en-us'
-title = 'Ken Nichol'
-theme = "PaperMod"
-
-[params]
-  description = "Ken Nichol is a Canadian develoepr and mentor helping teams simplify complexity through thoughtful systems and design."
-
