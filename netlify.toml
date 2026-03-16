@@ -6,6 +6,18 @@
   HUGO_VERSION = "0.131.0"
 
 [[redirects]]
+  from = "https://kennithnichol.ca/*"
+  to = "https://www.kennithnichol.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.kennithnichol.ca/*"
+  to = "https://www.kennithnichol.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/hire/*"
   to = "/"
   status = 301
