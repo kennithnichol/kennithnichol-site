@@ -1,4 +1,8 @@
-<img src="/images/kennith-nichol.jpg"
+{{ $img := resources.Get "images/kennith-nichol.jpg" }}
+{{ $small :=  $img.Resize "260x260 q85 webp" }}
+{{ $large :=  $img.Resize "520x520 q85 webp" }}
+<img src="{{ $img.RelPermalink }}"
+     srcset="{{ $small.RelPermalink }} 1x, {{ $large.RelPermalink }}"
      alt="Kennith Nichol, composer"
      width="260" height="260"
      class="bio-photo">
