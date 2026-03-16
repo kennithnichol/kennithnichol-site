@@ -1,0 +1,18 @@
+{{ define "main" }}
+<article class="single">
+  <div class="container">
+    <header class="single-header">
+      <p class="eyebrow">{{ .Section | title }}{{ with .Params.tag }} · {{ . }}{{ end }}</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.detail }}<p class="single-detail">{{ . }}</p>{{ end }}
+      {{ with .Params.status }}<p class="work-status">{{ . }}</p>{{ end }}
+      {{ if not .Date.IsZero }}
+      <time class="single-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2006" }}</time>
+      {{ end }}
+    </header>
+    <div class="prose">
+      {{ .Content }}
+    </div>
+  </div>
+</article>
+{{ end }}

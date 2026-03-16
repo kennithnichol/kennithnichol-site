@@ -1,0 +1,31 @@
+baseURL = "https://kennithnichol.com/"
+languageCode = "en-ca"
+title = "Kennith Nichol"
+
+[params]
+  description = "Composer pursuing the LRCM in Composition. Comox Valley, BC."
+  location = "Comox Valley, BC"
+  email = "ken@kennithnichol.com"
+  toptal = "https://www.toptal.com/resume/kennith-nichol"
+
+[menu]
+  [[menu.main]]
+    name = "Biography"
+    url = "/biography/"
+    weight = 1
+  [[menu.main]]
+    name = "Compositions"
+    url = "/compositions/"
+    weight = 2
+  [[menu.main]]
+    name = "Journal"
+    url = "/journal/"
+    weight = 3
+  [[menu.main]]
+    name = "Credentials"
+    url = "/credentials/"
+    weight = 4
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 5

@@ -1,0 +1,76 @@
+{{ define "main" }}
+
+<section class="hero">
+  <div class="container">
+    <p class="eyebrow">Composer · {{ .Site.Params.location }}</p>
+    <h1>Kennith Nichol</h1>
+    <p class="hero-body">
+      I write music drawn from the landscape of Vancouver Island — its stillness, its edges.
+      I am currently working toward the Licentiate of the Royal Conservatory of Music in Composition,
+      a process shaping both my technique and my artistic voice.
+    </p>
+    <nav class="hero-cta" aria-label="Quick links">
+      <a href="/compositions/" class="cta-primary">View compositions</a>
+      <a href="/journal/" class="cta-ghost">Read the journal</a>
+    </nav>
+  </div>
+</section>
+
+<hr>
+
+<section class="home-section" aria-labelledby="compositions-heading">
+  <div class="container">
+    <p class="section-label" id="compositions-heading">Compositions</p>
+    <div class="works-grid">
+      {{ range first 4 (where .Site.RegularPages "Section" "compositions") }}
+      <a href="{{ .RelPermalink }}" class="work-card">
+        <span class="work-status">{{ .Params.status }}</span>
+        <span class="work-title">{{ .Title }}</span>
+        <span class="work-detail">{{ .Params.detail }}</span>
+      </a>
+      {{ else }}
+      <div class="work-card">
+        <span class="work-status">In progress</span>
+        <span class="work-title">LRCM Composition No. 1</span>
+        <span class="work-detail">LRCM submission · In development</span>
+      </div>
+      {{ end }}
+    </div>
+    <p class="works-note">
+      I am in the early stages of the LRCM in Composition. This catalogue will grow alongside that work.
+      If you are interested in a commission, I welcome the conversation.
+    </p>
+    <a href="/compositions/" class="section-link">All compositions →</a>
+  </div>
+</section>
+
+<hr>
+
+<section class="home-section" aria-labelledby="journal-heading">
+  <div class="container">
+    <p class="section-label" id="journal-heading">Journal</p>
+    <ul class="journal-list">
+      {{ range first 3 (where .Site.RegularPages "Section" "journal") }}
+      <li>
+        <a href="{{ .RelPermalink }}" class="journal-item">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time>
+          <span class="ji-title">{{ .Title }}</span>
+          {{ with .Params.tag }}<span class="ji-tag">{{ . }}</span>{{ end }}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+    <a href="/journal/" class="section-link">All entries →</a>
+  </div>
+</section>
+
+<hr>
+
+<section class="contact-strip" aria-labelledby="contact-heading">
+  <div class="container">
+    <p id="contact-heading">Open to commissions &amp; collaborations</p>
+    <a href="/contact/" class="cta-primary">Get in touch</a>
+  </div>
+</section>
+
+{{ end }}

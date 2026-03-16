@@ -1,0 +1,44 @@
+{{ define "main" }}
+<section class="list-page">
+  <div class="container">
+    <header class="list-header">
+      <p class="eyebrow">{{ .Site.Title }}</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Content }}
+      <div class="list-intro prose">{{ . }}</div>
+      {{ end }}
+    </header>
+
+    {{ if eq .Section "compositions" }}
+    <div class="works-grid">
+      {{ range .Pages }}
+      <a href="{{ .RelPermalink }}" class="work-card">
+        <span class="work-status">{{ .Params.status }}</span>
+        <span class="work-title">{{ .Title }}</span>
+        <span class="work-detail">{{ .Params.detail }}</span>
+      </a>
+      {{ end }}
+    </div>
+
+    {{ else if eq .Section "journal" }}
+    <ul class="journal-list">
+      {{ range .Pages }}
+      <li>
+        <a href="{{ .RelPermalink }}" class="journal-item">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time>
+          <span class="ji-title">{{ .Title }}</span>
+          {{ with .Params.tag }}<span class="ji-tag">{{ . }}</span>{{ end }}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+
+    {{ else }}
+    <div class="prose">
+      {{ .Content }}
+    </div>
+    {{ end }}
+
+  </div>
+</section>
+{{ end }}
